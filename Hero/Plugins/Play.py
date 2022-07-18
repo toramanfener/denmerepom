@@ -33,7 +33,7 @@ from Hero.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
 from Hero.Utilities.func import mplay_stream, vplay_stream
 
 @app.on_message(
-    commandpro(["/p", "Play", "/play", "/play@{BOT_USERNAME}"]) & filters.group
+    commandpro(["/p", "/oynat", "/play", "/play@{BOT_USERNAME}"]) & filters.group
 )
 @checker
 @logging

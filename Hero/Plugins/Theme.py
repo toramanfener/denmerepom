@@ -28,15 +28,15 @@ themes2 = [
     "yellow",
 ]
 
-__MODULE__ = "ᴛʜᴇᴍᴇ"
+__MODULE__ = "ᴛᴇᴍᴀ"
 __HELP__ = """
 
 
 `/settheme`
-- sᴇᴛ ᴀ ᴛʜᴇᴍᴇ ғᴏʀ ᴛʜᴜᴍʙɴᴀɪʟs.
+- Küçük resimler için bir tema belirleyin.
 
 `/theme`
-- ᴄʜᴇᴄᴋ ᴛʜᴇᴍᴇ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ.
+- ᴛᴇᴍᴀʟᴀʀɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅɪɴ.
 """
 
 
