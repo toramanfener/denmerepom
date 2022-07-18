@@ -373,10 +373,10 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """ʜᴇʟʟᴏ {first_name},
-ɪ ᴀᴍ ᴀ ᴍᴜsɪᴄ ʙᴏᴛ, ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
+        """Selam [Tatlım](tg://settings),
+Ben Katrina Music Bot Sesli Sohbetlerde Müzik ve Video oynayabilirim beni gruba yönetici olarak ekleyip kesintisiz müziğin tadını çıkartabilirsiniz.
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: `/`
+Butonlara Tıklayarak komutlarıma bakabilirsiniz: `/`
 """.format(
             first_name=name
         ),
