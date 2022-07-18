@@ -32,20 +32,20 @@ from Hero.Utilities.youtube import get_m3u8, get_yt_info_id
 loop = asyncio.get_event_loop()
 
 
-__MODULE__ = "ᴠᴏɪᴄᴇ ᴄʜᴀᴛ"
+__MODULE__ = "sᴇsʟɪ sᴏʜʙᴇᴛ"
 __HELP__ = """
 
 
-`/pause`
+`/durdur`
 - ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴅᴜʀᴅᴜʀᴜʀ.
 
-`/resume`
+`/devam`
 - ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴅᴇᴠᴀᴍ ᴇᴛᴛɪʀɪʀ.
 
-`/skip`
+`/atla`
 - ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴀᴛʟᴀʀ.
 
-`/end` ᴠᴇʏᴀ `/stop`
+`/son` ᴠᴇʏᴀ `/stop`
 - ᴍᴜᴢɪᴋ ᴄᴀʟᴍᴀʏɪ sᴏɴᴀ ᴇʀɪʀ.
 
 `/queue`
@@ -64,7 +64,7 @@ __HELP__ = """
 
 
 @app.on_message(
-    filters.command(["pause", "skip", "resume", "stop", "end"])
+    filters.command(["pause", "skip", "resume", "stop", "end", "son", "durdur", "devam", "atla"])
     & filters.group
 )
 @AdminRightsCheck
@@ -82,7 +82,7 @@ async def admins(_, message: Message):
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
-            f"🎧 ᴠᴏɪᴄᴇᴄʜᴀᴛ ᴘᴀᴜsᴇᴅ ʙʏ {message.from_user.mention}..."
+            f"🎧 sᴇsʟɪ sᴏʜʙᴇᴛɪ ᴅᴜʀᴅᴜʀᴀɴ {message.from_user.mention}..."
         )
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
@@ -90,7 +90,7 @@ async def admins(_, message: Message):
         await music_on(chat_id)
         await resume_stream(chat_id)
         await message.reply_text(
-            f"🎧 ᴠᴏɪᴄᴇᴄʜᴀᴛ ʀᴇsᴜᴍᴇᴅ ʙʏ {message.from_user.mention}..."
+            f"🎧 sᴇsʟɪ sᴏʜʙᴇᴛɪ ᴅᴇᴠᴀᴍ ᴇᴛᴛɪʀᴇɴ {message.from_user.mention}..."
         )
     if message.command[0][1] == "t" or message.command[0][1] == "n":
         if message.chat.id not in db_mem:
@@ -105,7 +105,7 @@ async def admins(_, message: Message):
         await remove_active_video_chat(chat_id)
         await stop_stream(chat_id)
         await message.reply_text(
-            f"🎧 ᴠᴏɪᴄᴇᴄʜᴀᴛ ᴇɴᴅᴇᴅ/sᴛᴏᴘᴘᴇᴅ ʙʏ {message.from_user.mention}..."
+            f"🎧 sᴇsʟɪ sᴏʜʙᴇᴛɪ sᴏɴʟᴀɴᴅɪʀᴀɴ {message.from_user.mention}..."
         )
     if message.command[0][1] == "k":
         if message.chat.id not in db_mem:
@@ -162,7 +162,7 @@ async def admins(_, message: Message):
                 final_output = await message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__sᴋɪᴘᴘᴇᴅ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ__</b>\n\n🎥<b>__sᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ:__</b> {title} \n⏳<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} \n👤<b>__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__ </b> {mention}",
+                    caption=f"<b>__sᴀʀᴋɪ ᴀᴛʟᴀɴᴅɪ__</b>\n\n🎥<b>__sᴜ ᴀɴᴋɪ ᴄᴀʟᴀɴ ᴘᴀʀᴄᴀ:__</b> {title} \n⏳<b>__sᴀʀᴋɪ sᴜʀᴇsɪ:__</b> {duration_min} \n👤<b>__sᴀʀᴋɪʏɪ ᴀᴄᴀɴ:__ </b> {mention}",
                 )
                 await start_timer(
                     videoid,

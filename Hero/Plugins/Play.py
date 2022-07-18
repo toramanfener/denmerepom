@@ -56,7 +56,7 @@ async def mplayaa(_, message: Message):
     url = get_url(message)
     if audio:
         mystic = await message.reply_text(
-            "🔄 ᴘʀᴏᴄᴇssɪɴɢ ᴀᴜᴅɪᴏ...."
+            "⏳"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
@@ -105,7 +105,7 @@ async def mplayaa(_, message: Message):
     elif video:
         return await message.reply_text("ᴜsᴇ `/play` ᴏʀ `/vplay` ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴏʀ ᴠɪᴅᴇᴏ ɪɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ...")
     elif url:
-        mystic = await message.reply_text("🔄 ᴘʀᴏᴄᴇssɪɴɢ ᴜʀʟ....")
+        mystic = await message.reply_text("⏳")
         if not message.reply_to_message:
             query = message.text.split(None, 1)[1]
         else:
@@ -128,12 +128,12 @@ async def mplayaa(_, message: Message):
             await message.reply_photo(
                 photo="Utils/Playlist.jpg",
                 caption=(
-                    "**ᴜsᴀɢᴇ:** `/play` [ᴍᴜsɪᴄ ɴᴀᴍᴇ ᴏʀ ʏᴏᴜᴛᴜʙᴇ ʟɪɴᴋ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ ғɪʟᴇ]\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴘʟᴀʏ ᴘʟᴀʏʟɪsᴛs sᴇʟᴇᴄᴛ ᴛʜᴇ ᴏɴᴇ ғʀᴏᴍ ʙᴇʟᴏᴡ..."
+                    "**ᴜsᴀɢᴇ:** `/oynat` [Müzik adı veya yt link veya ses dosyasına yanıt verme]\n\nSesli Sohbette video veya müzik oynatır..."
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return
-        mystic = await message.reply_text("**sᴇᴀʀᴄʜɪɴɢ...**")
+        mystic = await message.reply_text("**⏳**")
         query = message.text.split(None, 1)[1]
         (
             title,
