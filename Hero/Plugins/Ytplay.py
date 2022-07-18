@@ -60,13 +60,13 @@ async def play(_, message: Message):
     url = get_url(message)
     if audio:
         mystic = await message.reply_text(
-            "🔄 Processing Audio... Please Wait!"
+            "🔄 Ses işleniyor... Lütfen bekleyiniz!"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
             if read:
                 return await mystic.edit(
-                    "Live Streaming Playing...Stop it to play music"
+                    "Canlı Akış Oynatılıyor...Müzik çalmak için durdurun"
                 )
             else:
                 pass
@@ -118,10 +118,10 @@ async def play(_, message: Message):
                 pass
             else:
                 return await message.reply_text(
-                    "Sorry! Bot only allows limited number of video calls due to CPU overload issues. Many other chats are using video call right now. Try switching to audio or try again later"
+                    "Afedersiniz! Bot, CPU aşırı yükleme sorunları nedeniyle yalnızca sınırlı sayıda görüntülü görüşmeye izin verir. Diğer birçok sohbet şu anda görüntülü aramayı kullanıyor. Sese geçmeyi deneyin veya daha sonra tekrar deneyin"
                 )
         mystic = await message.reply_text(
-            "🔄 Processing Video... Please Wait!"
+            "🔄 Video işleniyor... Lütfen bekleyiniz!"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
@@ -141,7 +141,7 @@ async def play(_, message: Message):
             mystic,
         )
     elif url:
-        mystic = await message.reply_text("🔄 Processing URL... Please Wait!")
+        mystic = await message.reply_text("🔄 URL işleniyor... Lütfen bekleyiniz!")
         if not message.reply_to_message:
             query = message.text.split(None, 1)[1]
         else:
@@ -168,12 +168,12 @@ async def play(_, message: Message):
             await message.reply_photo(
                 photo="Utils/Playlist.jpg",
                 caption=(
-                    "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\nIf you want to play Playlists! Select the one from Below."
+                    "**Kullanım:** /play [ᴠɪᴅᴇᴏ ɪsᴍɪ ᴠᴇʏᴀ ʏᴛ ʟɪɴᴋɪ ᴠᴇʏᴀ ᴠɪᴅᴇᴏʏᴀ ʏᴀɴɪᴛ ᴠᴇʀᴍᴇ]\n\nOynatma Listeleri oynamak istiyorsanız! Aşağıdan birini seçin."
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return
-        mystic = await message.reply_text("🔍 **Searching**...")
+        mystic = await message.reply_text("🔍 **Aranıyor**...")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -231,7 +231,7 @@ async def Music_Stream(_, CallbackQuery):
         )
     await CallbackQuery.answer(f"Processing:- {title[:20]}", show_alert=True)
     mystic = await CallbackQuery.message.reply_text(
-        f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**{MUSIC_BOT_NAME} İndiriliyor**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
     downloaded_file = await loop.run_in_executor(
         None, download, videoid, mystic, title
@@ -261,7 +261,7 @@ async def search_query_more(_, CallbackQuery):
     query, user_id = callback_request.split("|")
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "Search Your Own Music. You're not allowed to use this button.",
+            "Kendi Müziğinizi Arayın. Bu düğmeyi kullanma izniniz yok.",
             show_alert=True,
         )
     await CallbackQuery.answer("Searching More Results")

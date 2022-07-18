@@ -37,16 +37,16 @@ __HELP__ = """
 
 
 `/pause`
-- ᴘᴀᴜsᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
+- ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴅᴜʀᴅᴜʀᴜʀ.
 
 `/resume`
-- ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ ᴍᴜsɪᴄ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
+- ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴅᴇᴠᴀᴍ ᴇᴛᴛɪʀɪʀ.
 
 `/skip`
-- sᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ
+- ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴀᴛʟᴀʀ.
 
-`/end` or `/stop`
-- sᴛᴏᴘ ᴛʜᴇ ᴘʟᴀʏᴏᴜᴛ.
+`/end` ᴠᴇʏᴀ `/stop`
+- ᴍᴜᴢɪᴋ ᴄᴀʟᴍᴀʏɪ sᴏɴᴀ ᴇʀɪʀ.
 
 `/queue`
 - ᴄʜᴇᴄᴋ ǫᴜᴇᴜᴇ ʟɪsᴛ.
@@ -72,13 +72,13 @@ __HELP__ = """
 async def admins(_, message: Message):
     global get_queue
     if not len(message.command) == 1:
-        return await message.reply_text("ᴇʀʀᴏʀ ᴡʀᴏɴɢ ᴜsᴀɢᴇ ᴏғ ᴄᴏᴍᴍᴀɴᴅ...")
+        return await message.reply_text("Komutun yanlış kullanımı hatası...")
     if not await is_active_chat(message.chat.id):
         return await message.reply_text("ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ...")
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
-            return await message.reply_text("ᴍᴜsɪᴄ ɪs ᴀʟʀᴇᴀᴅʏ ᴘᴀᴜsᴇᴅ...")
+            return await message.reply_text("Müzik zaten duraklatıldı...")
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
@@ -86,7 +86,7 @@ async def admins(_, message: Message):
         )
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
-            return await message.reply_text("🌸 ᴍᴜsɪᴄ ɪs ᴀʟʀᴇᴀᴅʏ ᴘʟᴀʏɪɴɢ...")
+            return await message.reply_text("🌸 ᴍᴜᴢɪᴋ ᴢᴀᴛᴇɴ ɪʏɴᴀᴛɪʟɪʏᴏʀ...")
         await music_on(chat_id)
         await resume_stream(chat_id)
         await message.reply_text(

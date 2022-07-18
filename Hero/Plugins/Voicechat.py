@@ -45,7 +45,7 @@ async def gback_list_chose_stream(_, CallbackQuery):
     videoid, duration, user_id = callback_request.split("|")
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "ᴛʜɪs ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ sᴇᴀʀᴄʜ ʏᴏᴜʀ ᴏᴡɴ sᴏɴɢ...", show_alert=True
+            "Bu senin müziğin değil kendi müziğini ara!", show_alert=True
         )
     buttons = choose_markup(videoid, duration, user_id)
     await CallbackQuery.edit_message_reply_markup(
@@ -85,7 +85,7 @@ async def timer_checkup_markup(_, CallbackQuery):
         return await CallbackQuery.answer(f"ɴᴏᴛ ᴘʟᴀʏɪɴɢ...", show_alert=True)
     else:
         return await CallbackQuery.answer(
-            f"ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ", show_alert=True
+            f"aktif sesli sohbet yok", show_alert=True
         )
 
 
@@ -93,7 +93,7 @@ async def timer_checkup_markup(_, CallbackQuery):
 async def activevc(_, message: Message):
     global get_queue
     if await is_active_chat(message.chat.id):
-        mystic = await message.reply_text("ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ɢᴇᴛᴛɪɴɢ ǫᴜᴇᴜᴇ...")
+        mystic = await message.reply_text("Sıraya alınıyor lütfen bekleyin...")
         dur_left = db_mem[message.chat.id]["left"]
         duration_min = db_mem[message.chat.id]["total"]
         got_queue = get_queue.get(message.chat.id)

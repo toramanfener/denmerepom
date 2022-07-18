@@ -26,20 +26,20 @@ from Hero.Utilities.ping import get_readable_time
 
 welcome_group = 2
 
-__MODULE__ = "ᴇssᴇɴᴛɪᴀʟs"
+__MODULE__ = "ᴛᴇᴍᴇʟ ᴋᴏᴍᴜᴛʟᴀʀ"
 __HELP__ = """
 
 
 /start 
-- Start the Bot.
+- ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʀ.
 
 
 /help 
-- Get Commands Helper Menu.
+- ᴋᴏᴍᴜᴛʟᴀʀ ᴍᴇɴᴜsᴜ.
 
 
 /settings 
-- Get Settings button.
+- ᴀʏᴀʀʟᴀʀ ᴍᴇɴᴜsᴜ.
 """
 
 
