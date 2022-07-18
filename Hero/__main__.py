@@ -82,7 +82,7 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]ᴄᴏɴɢʀᴀᴛs ʜᴇʀᴏ ᴍᴜsɪᴄ ʙᴏᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨\n"
+        "[bold green]ᴄᴏɴɢʀᴀᴛs ᴋᴀᴛʀɪɴᴀ ᴍᴜsɪᴄ ʙᴏᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨\n"
     )
     try:
         await app.send_message(
@@ -229,11 +229,10 @@ async def initiate_bot():
     console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
 
 
-home_text_pm = f"""ʜᴇʟʟᴏ ,
-ᴍʏ ɴᴀᴍᴇ ɪs {BOT_NAME}.
-ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ+ᴠɪᴅᴇᴏ sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+home_text_pm = f"""Selam [Bebeğim](tg://settings),
+Ben Katrina Music Bot Sesli Sohbetlerde Müzik ve video oynayabilirim beni gruba yönetici olarak ekleyip kesintisiz müziğin tadını çıkarabilirsiniz...!
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: / """
+Komutlarıma Aşağıdaki butonlardan bakabilirsiniz: / """
 
 
 @app.on_message(filters.command(["help", "start"]) & filters.private)
