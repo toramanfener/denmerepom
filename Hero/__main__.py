@@ -106,7 +106,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_1.send_message(
                 LOG_GROUP_ID,
-                "<b>ᴄᴏɴɢʀᴀᴛs ᴀssɪsᴛᴀɴᴛ ᴄʟɪᴇɴᴛ 𝟷 ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨</b>",
+                "<b>ᴀsɪsᴛᴀɴ 1 ʙᴀsʟᴀᴛɪʟᴅɪ 🌸✨</b>",
             )
         except Exception as e:
             print(
@@ -397,11 +397,11 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""ʜᴇʟʟᴏ {query.from_user.first_name},
+    top_text = f"""ᴍᴇʀʜᴀʙᴀ {query.from_user.first_name},
 
-ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.
+ʙᴇɴ ᴋᴀᴛʀɪɴᴀ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ.
 
-ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ: /
+ʙᴜᴛᴏɴʟᴀʀᴀ ᴛɪᴋʟᴀʏᴀʀᴀᴋ ʏᴀʀᴅɪᴍ ᴀʟᴀʙɪʟɪʀsɪɴ: /
  """
     if mod_match:
         module = mod_match.group(1)
@@ -415,10 +415,10 @@ async def help_button(client, query):
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ ʙᴀᴄᴋ", callback_data="help_back"
+                        text="↪️ ɢᴇʀɪ", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="🔄 ᴄʟᴏsᴇ", callback_data="close"
+                        text="🔄 ᴋᴀᴘᴀᴛ", callback_data="close"
                     ),
                 ],
             ]
