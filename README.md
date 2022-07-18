@@ -7,7 +7,7 @@
     <a href="https://t.me/Yaaro_ki_yaarii"> sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ </a> 
 </p>
     
-# ʜᴇʀᴏ ᴍᴜsɪᴄs ʙᴏᴛ
+# ƘɑԵɾíղɑ ʍմՏíϲ ҍօԵ
 
 ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜsɪᴄ+ᴠɪᴅᴇᴏ ʙᴏᴛ ʙʏ ᴡʜɪᴄʜ ʏᴏᴜ ᴄᴀɴ sᴛʀᴇᴀᴍ sᴏɴɢs, ᴠɪᴅᴇᴏs ᴀɴᴅ ᴇᴠᴇɴ ʟɪᴠᴇ sᴛʀᴇᴀᴍs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴄᴀʟʟs ᴠɪᴀ ᴠᴀʀɪᴏᴜs sᴏᴜʀᴄᴇs. ɪᴛ ᴄᴏᴍᴇs ᴡɪᴛʜ  ᴜsᴇʀ ғʀɪᴇɴᴅʟʏ ᴀɴᴅ ᴇᴀsʏ ᴛᴏ ᴜsᴇ ʏᴇᴛ ᴇʟᴇɢᴀɴᴛ ғᴇᴀᴛᴜʀᴇs.
 
@@ -51,14 +51,14 @@
     
 <h4> ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ʏᴜᴋᴋɪ ᴏɴ ʜᴇʀᴏᴋᴜ</h4>    
     
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MacroKeke/KatrinaMusicBot)
     
 </details>
 
 
 ## ᴏʀɪɢɪɴᴀʟ ʀᴇᴘᴏ & sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
 
-[sʜɪᴋʜᴀʀ](https://github.com/notreallyshikhar/YukkiMusicBot) 
+[Majeste](https://github.com/MacroKeke/KatrinaMusicBot)
 
 ## ᴀᴄᴋɴᴏᴡʟᴇᴅɢᴇᴍᴇɴᴛs
 
