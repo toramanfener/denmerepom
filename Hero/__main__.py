@@ -82,16 +82,16 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]ᴄᴏɴɢʀᴀᴛs ᴋᴀᴛʀɪɴᴀ ᴍᴜsɪᴄ ʙᴏᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨\n"
+        "[bold green]ᴋᴀᴛʀɪɴᴀ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>ᴄᴏɴɢʀᴀᴛs ᴍᴜsɪᴄ ʙᴏᴛ ʜᴀs sᴛᴀʀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 🌸✨</b>",
+            "<b>ᴋᴀᴛʀɪɴᴀ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨</b>",
         )
     except Exception as e:
         print(
-            "\nʙᴏᴛ ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ᴄʜᴀɴɴᴇʟ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ❗"
+            "\nʙᴏᴛ ʟᴏɢ ɢʀᴜʙᴜɴᴅᴀ ᴀᴅᴍɪɴ ᴅᴇɢɪʟ ʙᴏᴛᴜ ᴀᴅᴍɪɴ ʏᴀᴘɪᴘ ᴛᴇᴋʀᴀʀ ᴅᴇɴᴇʏɪɴ❗"
         )
         console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
         return
@@ -110,7 +110,7 @@ async def initiate_bot():
             )
         except Exception as e:
             print(
-                "\nᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ 1 ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ ᴄʜᴀɴɴᴇʟ. ᴍᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ❗"
+                "\nᴀsɪsᴛᴀɴ 1 ʜᴇsᴀʙɪ ʟᴏɢ ɢʀᴜᴘᴛᴀ ᴀᴅᴍɪɴ ᴅᴇɢɪʟ ᴀᴅᴍɪɴ ʏᴀᴘɪᴘ ᴛᴇᴋʀᴀʀ ᴅᴇɴᴇʏɪɴ❗"
             )
             console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
             return
@@ -315,22 +315,22 @@ async def start_command(_, message):
 
 ❇️**ᴛɪᴛʟᴇ:** {title}
 
-⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
-👀**ᴠɪᴇᴡs:** `{views}`
+⏳**sᴜʀᴇ:** {duration} Mins
+👀**ɪᴢʟᴇᴍᴍᴇ:** `{views}`
 ⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
-🎥**ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
-📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [Visit From Here]({channellink})
-🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋ:** [Link]({link})
+🎥**ᴋᴀɴᴀʟ ɪsᴍɪ:** {channel}
+📎**ᴋᴀɴᴀʟ ʟɪɴᴋɪ:** [Visit From Here]({channellink})
+🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋɪ:** [Link]({link})
 
 ⚡️ __sᴇᴀʀᴄʜᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🎥 ᴡᴀᴛᴄʜ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ", url=f"{link}"
+                            text="🎥 ʏᴏᴜᴛᴜʙᴇ ᴅᴇ ɪᴢʟᴇ", url=f"{link}"
                         ),
                         InlineKeyboardButton(
-                            text="🔄 ᴄʟᴏsᴇ", callback_data="close"
+                            text="🔄 ᴋᴀᴘᴀᴛ", callback_data="close"
                         ),
                     ],
                 ]
@@ -373,7 +373,7 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """Selam [Tatlım](tg://settings),
-Ben Katrina Music Bot Sesli Sohbetlerde Müzik ve Video oynayabilirim beni gruba yönetici olarak ekleyip kesintisiz müziğin tadını çıkartabilirsiniz.
+Ben Katrina Music Bot Sesli Sohbetlerde Müzik ve Video oynatabilirim beni gruba yönetici olarak ekleyip kesintisiz müziğin tadını çıkartabilirsiniz.
 
 Butonlara Tıklayarak komutlarıma bakabilirsiniz: `/`
 """.format(
