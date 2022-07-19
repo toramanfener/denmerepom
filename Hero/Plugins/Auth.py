@@ -16,24 +16,24 @@ __HELP__ = """
 -ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ sᴋɪᴘ, ᴘᴀᴜsᴇ, sᴛᴏᴘ, ʀᴇsᴜᴍᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴇᴠᴇɴ ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs...
 
 
-`/auth` [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ] 
-- ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+`/ver` [ᴋᴜʟʟᴀɴɪᴄɪ ᴀᴅɪ ᴠᴇʏᴀ ᴍᴇsᴀᴊ ʏᴀɴɪᴛʟᴀᴍᴀ] 
+- ʏᴇᴛᴋɪʟɪ ᴏʟᴍᴀʏᴀɴ ᴋᴜʟʟᴀɴɪᴄɪʏᴀ ʏᴏɴᴇᴛɪᴄɪ ᴋᴏᴍᴜᴛʟᴀᴛɪɴɪ ᴋᴜʟʟᴀɴᴍᴀsɪ ɪᴄɪɴ ʏᴇᴛᴋɪ ᴠᴇʀɪɴ.
 
-`/unauth` [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ] 
-- ʀᴇᴍᴏᴠᴇ ᴀ ᴜsᴇʀ ғʀᴏᴍ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+`/al` [ᴋᴜʟʟᴀɴɪᴄɪ ᴀᴅɪ ᴠᴇʏᴀ ᴍᴇsᴀᴊ ʏᴀɴɪᴛʟᴀᴍᴀ] 
+- ʙᴏᴛ ᴅᴀ ʏᴏɴᴇᴛɪᴄɪ ɪᴢɪɴʟᴇʀɪ ᴠᴇʀᴅɪɢɪɴɪᴢ ᴋᴜʟʟᴀɴɪᴄɪ ᴅᴀɴ ʏᴇᴛᴋɪʏɪ ᴀʟɪɴ.
 
 `/authusers` 
-- ᴄʜᴇᴄᴋ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+- ɢʀᴜʙᴜɴᴜᴢᴅᴀᴋɪ ʏᴇᴛᴋɪʟɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀ.
 """
 
 
-@app.on_message(filters.command("auth") & filters.group)
+@app.on_message(filters.command("ver") & filters.group)
 @AdminActual
 async def auth(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ's ᴍᴇssᴀɢᴇ ᴏʀ ɢɪᴠᴇ ᴜsᴇʀɴᴀᴍᴇ/ᴜsᴇʀ ɪᴅ."
+                "ᴋᴜʟʟᴀɴɪᴄɪ ᴀᴅɪ ᴠᴇʀɪɴ ᴠᴇʏᴀ ʙɪʀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀʏɪɴ. \n\nᴏʀɴᴇᴋ /auth @MajesteSahip"
             )
             return
         user = message.text.split(None, 1)[1]
@@ -50,7 +50,7 @@ async def auth(_, message: Message):
             count += 1
         if int(count) == 20:
             return await message.reply_text(
-                "ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ʜᴀᴠᴇ 20 ᴜsᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ (ᴀᴜʟ)"
+                "**sᴜ ᴀɴʟɪᴋ sᴀᴅᴇᴄᴇ 20 ᴋᴜʟʟᴀɴɪᴄɪ ᴇᴋʟᴇʏᴇʙɪʟɪʀsɪɴ...!**"
             )
         if token not in _check:
             assis = {
@@ -61,7 +61,7 @@ async def auth(_, message: Message):
             }
             await save_authuser(message.chat.id, token, assis)
             await message.reply_text(
-                f"ᴀᴅᴅᴇᴅ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏғ ᴛʜɪs ɢʀᴏᴜᴘ..."
+                f"ᴋᴜʟʟᴀɴɪᴄɪ ʏᴇᴛᴋɪʟɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴇᴋʟᴇɴᴅɪ..."
             )
             return
         else:
@@ -78,7 +78,7 @@ async def auth(_, message: Message):
         count += 1
     if int(count) == 20:
         return await message.reply_text(
-            "ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ ʜᴀᴠᴇ 20 ᴜsᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ (ᴀᴜʟ)"
+            "**sᴜ ᴀɴʟɪᴋ sᴀᴅᴇᴄᴇ 20 ᴋᴜʟʟᴀɴɪᴄɪ ᴇᴋʟᴇʏᴇʙɪʟɪʀsɪɴ..!**"
         )
     if token not in _check:
         assis = {
@@ -89,14 +89,14 @@ async def auth(_, message: Message):
         }
         await save_authuser(message.chat.id, token, assis)
         await message.reply_text(
-            f"ᴀᴅᴅᴇᴅ ᴛᴏ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ ᴏғ ᴛʜɪs ɢʀᴏᴜᴘ..."
+            f"ᴋᴜʟʟᴀɴɪᴄɪ ʏᴇᴛᴋɪʟɪ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀᴀ ᴇᴋʟᴇɴᴅɪ..."
         )
         return
     else:
         await message.reply_text(f"ᴀʟʀᴇᴀᴅʏ ɪɴ ᴛʜᴇ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ʟɪsᴛ...")
 
 
-@app.on_message(filters.command("unauth") & filters.group)
+@app.on_message(filters.command("al") & filters.group)
 @AdminActual
 async def whitelist_chat_func(_, message: Message):
     if not message.reply_to_message:

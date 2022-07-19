@@ -13,7 +13,7 @@ __HELP__ = """
 
 
 **ɴᴏᴛᴇ:**
-ᴏɴʟʏ ғᴏʀ sᴜᴅᴏ ᴜsᴇʀs.
+Sadece Botun Yöneticileri İçin.
 
 
 `/blacklistchat` [ᴄʜᴀᴛ_ɪᴅ] 

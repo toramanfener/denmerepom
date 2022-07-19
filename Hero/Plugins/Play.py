@@ -148,7 +148,7 @@ async def mplayaa(_, message: Message):
 
 
 @app.on_message(
-    commandpro(["/v", "/vplay", "vplay", "/vplay@{BOT_USERNAME}"]) & filters.group
+    commandpro(["/izle", "/vplay", "/izlet", "/vplay@{BOT_USERNAME}"]) & filters.group
 )
 @checker
 @logging
@@ -189,7 +189,7 @@ async def vplayaaa(_, message: Message):
                     "sᴏʀʀʏ ʙᴏᴛ ᴏɴʟʏ ᴀʟʟᴏᴡs ʟɪᴍɪᴛᴇᴅ ɴᴜᴍʙᴇʀ ᴏғ ᴠɪᴅᴇᴏ ᴄᴀʟʟs ᴅᴜᴇ ᴛᴏ ᴄᴘᴜ ᴏᴠᴇʀʟᴏᴀᴅ ɪssᴜᴇs. ᴍᴀɴʏ ᴏᴛʜᴇʀ ᴄʜᴀᴛs ᴀʀᴇ ᴜsɪɴɢ ᴠɪᴅᴇᴏ ᴄᴀʟʟ ʀɪɢʜᴛ ɴᴏᴡ. ᴛʀʏ sᴡɪᴛᴄʜɪɴɢ ᴛᴏ ᴀᴜᴅɪᴏ ᴏʀ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ..."
                 )
         mystic = await message.reply_text(
-            "🔄 ᴘʀᴏᴄᴇssɪɴɢ ᴠɪᴅᴇᴏ..."
+            "⏳"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]

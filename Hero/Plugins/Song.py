@@ -45,7 +45,7 @@ async def play(_, message: Message):
         pass
     url = get_url(message)
     if url:
-        mystic = await message.reply_text("🔄 Sorgu İşleniyor...")
+        mystic = await message.reply_text("🔍")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -66,10 +66,10 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             await message.reply_text(
-                "**Usage:**\n\n/song [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
+                "**Usage:**\n\n/bul [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
             )
             return
-        mystic = await message.reply_text("🔍 Sorgu Aranıyor...")
+        mystic = await message.reply_text("🔍")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -185,7 +185,7 @@ async def play(_, message: Message):
         pass
     url = get_url(message)
     if url:
-        mystic = await message.reply_text("🔄 Sorgu İşleniyor...")
+        mystic = await message.reply_text("🔍")
         query = message.text.split(None, 1)[1]
         (
             title,
@@ -209,7 +209,7 @@ async def play(_, message: Message):
                 "**Usage:**\n\n/song [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
             )
             return
-        mystic = await message.reply_text("🔍 Sorgu Aranıyor...")
+        mystic = await message.reply_text("⏳")
         query = message.text.split(None, 1)[1]
         (
             title,

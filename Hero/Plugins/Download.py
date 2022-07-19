@@ -71,11 +71,11 @@ async def ytdata(_, CallbackQuery):
 
 
 inl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ...", callback_data=f"down")]]
+    [[InlineKeyboardButton(text="ɪɴᴅɪʀɪʟɪʏᴏʀ...", callback_data=f"down")]]
 )
 
 upl = InlineKeyboardMarkup(
-    [[InlineKeyboardButton(text="ᴜᴘʟᴏᴀᴅɪɴɢ...", callback_data=f"down")]]
+    [[InlineKeyboardButton(text="ʏᴜᴋʟᴇɴɪʏᴏʀ...", callback_data=f"down")]]
 )
 
 
@@ -83,15 +83,15 @@ def inl_mark(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴅᴏᴡɴʟᴏᴀᴅ ᴏʀ ᴜᴘʟᴏᴀᴅ ғᴀɪʟᴇᴅ...", callback_data=f"down"
+                text="ɪɴᴅɪʀɪʟᴅɪ ɢᴏɴᴅᴇʀɪʟɪʏᴏʀ...", callback_data=f"down"
             )
         ],
         [
             InlineKeyboardButton(
-                text="⬅️  ɢᴏ ʙᴀᴄᴋ", callback_data=f"good {videoid}|{user_id}"
+                text="⬅️  ɢᴇʀɪ ᴅᴏɴ", callback_data=f"good {videoid}|{user_id}"
             ),
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data=f"close2"
+                text="🗑 ᴍᴇɴᴜʏᴜ ᴋᴀᴘᴀᴛ", callback_data=f"close2"
             ),
         ],
     ]
@@ -109,7 +109,7 @@ async def boom(_, CallbackQuery):
     user_id = CallbackQuery.from_user.id
     type, format_id, videoid = callback_request.split("||")
     mystic = await CallbackQuery.edit_message_text(
-        "ᴅᴏᴡɴʟᴏᴀᴅ sᴛᴀʀᴛᴇᴅ...\n\nᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴘᴇᴇᴅ ᴄᴏᴜʟᴅ ʙᴇ sʟᴏᴡ ᴘʟᴇᴀsᴇ ʜᴏʟᴅ ᴏɴ...",
+        "ɪɴᴅɪʀᴍᴇ ɪsʟᴇᴍɪ ʙᴀsʟᴀᴅɪ...\n\nɪɴᴅɪʀᴍᴇ ɪsʟᴇᴍɪ ʏᴀᴠᴀş ᴏʟᴀʙɪʟɪʀ ʟᴜᴛғᴇɴ ʙᴇᴋʟᴇʏɪɴ...",
         reply_markup=inl,
     )
     yturl = f"https://www.youtube.com/watch?v={videoid}"

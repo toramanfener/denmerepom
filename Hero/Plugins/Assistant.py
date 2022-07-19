@@ -94,7 +94,7 @@ async def check_ass(_, message: Message):
     _assistant = await get_assistant(message.chat.id, "assistant")
     if not _assistant:
         return await message.reply_text(
-            "ɴᴏ ᴘʀᴇ-sᴀᴠᴇᴅ ᴀssɪsᴛᴀɴᴛ ғᴏᴜɴᴅ...\n\nʏᴏᴜ ᴄᴀɴ sᴇᴛ ᴀssɪsᴛᴀɴᴛ ᴠɪᴀ /play"
+            "Asistan Sohbette Yok...\n\nAsistani Gruba Eklemek İçin /play yazın"
         )
     else:
         ass = _assistant["saveassistant"]

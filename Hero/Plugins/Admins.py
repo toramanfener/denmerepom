@@ -45,7 +45,7 @@ __HELP__ = """
 `/atla`
 - ᴠɪᴅᴇᴏʏᴜ ᴠᴇʏᴀ ᴍᴜᴢɪɢɪ ᴀᴛʟᴀʀ.
 
-`/son` ᴠᴇʏᴀ `/stop`
+`/son` ᴠᴇʏᴀ `/end`
 - ᴍᴜᴢɪᴋ ᴄᴀʟᴍᴀʏɪ sᴏɴᴀ ᴇʀɪʀ.
 
 `/queue`
@@ -64,7 +64,7 @@ __HELP__ = """
 
 
 @app.on_message(
-    filters.command(["pause", "skip", "resume", "stop", "end", "son", "durdur", "devam", "atla"])
+    filters.command(["devam", "atla", "durdur", "son", "end", "son"])
     & filters.group
 )
 @AdminRightsCheck
