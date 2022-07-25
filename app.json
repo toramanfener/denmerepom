@@ -35,22 +35,22 @@
     },
     "MUSIC_BOT_NAME": {
       "description": "A name for your Music Bot.",
-      "value": "Hero",
+      "value": "KatrinaMusicBot",
       "required": true
     },
     "SUPPORT_CHANNEL": {
       "description": "Support Channel Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
-      "value": "Modmenumaking",
+      "value": "MajesteBotlar",
       "required": false
     },
     "SUPPORT_GROUP": {
       "description": "Support Group Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
-      "value": "Yaaro_ki_yaarii",
+      "value": "MajesteSohbetTr",
       "required": false
     },
     "OWNER_ID": {
       "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-      "value": "1323020756",
+      "value": "5077397380",
       "required": true
     },
     "STRING_SESSION1": {
@@ -95,7 +95,7 @@
     },
     "SUDO_USERS": {
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
-      "value": "1323020756",
+      "value": "5077397380",
       "required": true
     },
     "LOG_SESSION": {
@@ -105,7 +105,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "If you dont know this, Leave as it is",
-      "value": "https://github.com/Shailendra34/Hero-OP",
+      "value": "https://github.com/MacroKeke/KatrinaMusicBot",
       "required": true
     },
     "UPSTREAM_BRANCH": {
