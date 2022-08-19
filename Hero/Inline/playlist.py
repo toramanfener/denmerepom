@@ -6,15 +6,15 @@ def check_markup(user_name, user_id, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"ɢʀᴏᴜᴘ's ᴘʟᴀʏʟɪsᴛ",
+                text=f"Grup Oynatma Listesi",
                 callback_data=f"playlist_check {user_id}|Group|{videoid}",
             ),
             InlineKeyboardButton(
-                text=f"{user_name[:8]}'s ᴘʟᴀʏʟɪsᴛ",
+                text=f"{user_name[:8]}'s Oynatma Listesi",
                 callback_data=f"playlist_check {user_id}|Personal|{videoid}",
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 Kapat", callback_data="close")],
     ]
     return buttons
 
@@ -23,15 +23,15 @@ def playlist_markup(user_name, user_id, videoid):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"ɢʀᴏᴜᴘ's ᴘʟᴀʏʟɪsᴛ",
+                text=f"Grup Oynatma Listesi",
                 callback_data=f"show_genre {user_id}|Group|{videoid}",
             ),
             InlineKeyboardButton(
-                text=f"{user_name[:8]}'s ᴘʟᴀʏʟɪsᴛ",
+                text=f"{user_name[:8]}'s Oynatma Listesi",
                 callback_data=f"show_genre {user_id}|Personal|{videoid}",
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 Kapat", callback_data="close")],
     ]
     return buttons
 
@@ -80,10 +80,10 @@ def play_genre_playlist(user_id, type, videoid):
         ],
         [
             InlineKeyboardButton(
-                text="⬅️ ɢᴏ ʙᴀᴄᴋ",
+                text="⬅️ Geri dön",
                 callback_data=f"main_playlist {videoid}|{type}|{user_id}",
             ),
-            InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data="close"),
+            InlineKeyboardButton(text="🗑 Kapat", callback_data="close"),
         ],
     ]
     return buttons
@@ -133,9 +133,9 @@ def add_genre_markup(user_id, type, videoid):
         ],
         [
             InlineKeyboardButton(
-                text="⬅️ ɢᴏ ʙᴀᴄᴋ", callback_data=f"goback {videoid}|{user_id}"
+                text="⬅️ Geri Dön", callback_data=f"goback {videoid}|{user_id}"
             ),
-            InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data="close"),
+            InlineKeyboardButton(text="🗑 Kapat", callback_data="close"),
         ],
     ]
     return buttons
@@ -178,7 +178,7 @@ def check_genre_markup(type, videoid, user_id):
                 text=f"ᴏᴛʜᴇʀs", callback_data=f"check_playlist {type}|Others"
             ),
         ],
-        [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data="close")],
+        [InlineKeyboardButton(text="🗑 Kapat", callback_data="close")],
     ]
     return buttons
 
@@ -214,8 +214,8 @@ def paste_queue_markup(url):
             InlineKeyboardButton(text="⏭️", callback_data=f"skipcb"),
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
-        [InlineKeyboardButton(text="🌸 ᴄʜᴇᴄᴋᴏᴜᴛ ǫᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ", url=f"{url}")],
-        [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data=f"close")],
+        [InlineKeyboardButton(text="🌸 Kuyruğa Alınmış Oynatma Listesi", url=f"{url}")],
+        [InlineKeyboardButton(text="🗑 Kapat", callback_data=f"close")],
     ]
     return buttons
 
@@ -228,8 +228,8 @@ def fetch_playlist(user_name, type, genre, user_id, url):
                 callback_data=f"play_playlist {user_id}|{type}|{genre}",
             ),
         ],
-        [InlineKeyboardButton(text="🌿 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʟᴀʏʟɪsᴛ", url=f"{url}")],
-        [InlineKeyboardButton(text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ", callback_data=f"close")],
+        [InlineKeyboardButton(text="🌿 Kuyruğa Alınmış Liste", url=f"{url}")],
+        [InlineKeyboardButton(text="🗑 Kapat", callback_data=f"close")],
     ]
     return buttons
 
@@ -238,7 +238,7 @@ def delete_playlist_markuup(type, genre):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"🗑 ᴅᴇʟᴇᴛᴇ ᴘʟᴀʏʟɪsᴛ",
+                text=f"🗑 Temizle",
                 callback_data=f"delete_playlist {type}|{genre}",
             ),
             InlineKeyboardButton(text="❌ɴᴏ", callback_data=f"close"),
