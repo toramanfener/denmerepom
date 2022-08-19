@@ -8,22 +8,22 @@ from Hero import BOT_USERNAME
 def setting_markup2():
     buttons = [
         [
-            InlineKeyboardButton(text="🔈 ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"),
-            InlineKeyboardButton(text="🎚 ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
+            InlineKeyboardButton(text="🔈 Ses Kalitesi", callback_data="AQ"),
+            InlineKeyboardButton(text="🎚 Ses Düzeyi", callback_data="AV"),
         ],
         [
             InlineKeyboardButton(
-                text="👥 ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs", callback_data="AU"
+                text="👥 Yetkili Kullanıcılar", callback_data="AU"
             ),
             InlineKeyboardButton(
                 text="💻 ᴅᴀsʜʙᴏᴀʀᴅ", callback_data="Dashboard"
             ),
         ],
         [
-            InlineKeyboardButton(text="🗑️ ᴄʟᴏsᴇ", callback_data="close"),
+            InlineKeyboardButton(text="🗑️ Kapat", callback_data="close"),
         ],
     ]
-    return f"⚙️  **{MUSIC_BOT_NAME} sᴇᴛᴛɪɴɢs**", buttons
+    return f"⚙️  **{MUSIC_BOT_NAME} Ayarlar**", buttons
 
 
 def start_pannel():
@@ -31,31 +31,31 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ Ayarlar", callback_data="settingm"
                 )
             ],
         ]
-        return f"🎛  **ᴛʜɪs ɪs {MUSIC_BOT_NAME}**", buttons
+        return f"🎛  ** {MUSIC_BOT_NAME}**", buttons
     if not SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ Ayarlar", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌸 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"{SUPPORT_GROUP}"
+                    text="🌸 Eğlence Grubu", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -64,17 +64,17 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ Ayarlar", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌺 ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"{SUPPORT_CHANNEL}"
+                    text="🌺 Resmi kanal", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -83,20 +83,20 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="⚙️ sᴇᴛᴛɪɴɢs", callback_data="settingm"
+                    text="⚙️ Ayarlar", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌸 ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"{SUPPORT_CHANNEL}"
+                    text="🌸 Resmi Kanal", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="🌺 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"{SUPPORT_GROUP}"
+                    text="🌺 Eğlence Grubu", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -108,13 +108,13 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
                     "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    url=f"https://t.me/keyfimusicbot?startgroup=true",
                 )
             ],
         ]
@@ -123,18 +123,18 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
                     "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    url=f"https://t.me/keyfimusicbot?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌸 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"{SUPPORT_GROUP}"
+                    text="🌸 Eğlence Grubu", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -143,18 +143,18 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    "➕ Beni Bir Gruba Ekle ➕",
+                    url=f"https://t.me/keyfimusicbot?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌺 ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"{SUPPORT_CHANNEL}"
+                    text="🌺 Resmi Kanal", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -163,21 +163,21 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 ʜᴇʟᴘᴇʀ ᴄᴏᴍᴍᴀɴᴅs ᴍᴇɴᴜ", callback_data="shikhar"
+                    text="🗂 Komutlar Menüsü", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    "➕ Beni Bir Gruba Ekle ➕",
+                    url=f"https://t.me/keyfimusicbot?startgroup=true",
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="🌸 ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ", url=f"{SUPPORT_CHANNEL}"
+                    text="🌸 Resmi Kanal", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="🌺 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"{SUPPORT_GROUP}"
+                    text="🌺 Eğlence Grubu", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -187,8 +187,8 @@ def private_panel():
 def setting_markup():
     buttons = [
         [
-            InlineKeyboardButton(text="🔈 ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"),
-            InlineKeyboardButton(text="🎚 ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ", callback_data="AV"),
+            InlineKeyboardButton(text="🔈 Ses Kalitesi", callback_data="AQ"),
+            InlineKeyboardButton(text="🎚 Ses Düzeyi", callback_data="AV"),
         ],
         [
             InlineKeyboardButton(
@@ -199,8 +199,8 @@ def setting_markup():
             ),
         ],
         [
-            InlineKeyboardButton(text="✖🗑 ᴄʟᴏsᴇ", callback_data="close"),
-            InlineKeyboardButton(text="🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="okaybhai"),
+            InlineKeyboardButton(text="✖🗑 Kapat", callback_data="close"),
+            InlineKeyboardButton(text="🔙 Geri Dön", callback_data="okaybhai"),
         ],
     ]
     return f"⚙️  **{MUSIC_BOT_NAME} sᴇᴛᴛɪɴɢs**", buttons
@@ -210,23 +210,23 @@ def volmarkup():
     buttons = [
         [
             InlineKeyboardButton(
-                text="🔄 ʀᴇsᴇᴛ ᴀᴜᴅɪᴏ ᴠᴏʟᴜᴍᴇ 🔄", callback_data="HV"
+                text="🔄 Ses Düzeyi Sıfırlanıyor 🔄", callback_data="HV"
             )
         ],
         [
-            InlineKeyboardButton(text="🔈 ʟᴏᴡ ᴠᴏʟ", callback_data="LV"),
-            InlineKeyboardButton(text="🔉 ᴍᴇᴅɪᴜᴍ ᴠᴏʟ", callback_data="MV"),
+            InlineKeyboardButton(text="🔈 Düşük Ses", callback_data="LV"),
+            InlineKeyboardButton(text="🔉 Orta Düzey ses", callback_data="MV"),
         ],
         [
-            InlineKeyboardButton(text="🔊 ʜɪɢʜ ᴠᴏʟ", callback_data="HV"),
-            InlineKeyboardButton(text="🔈 ᴀᴍᴘʟɪғɪᴇᴅ ᴠᴏʟ", callback_data="VAM"),
+            InlineKeyboardButton(text="🔊 Yüksek Ses", callback_data="HV"),
+            InlineKeyboardButton(text="🔈 Çok Yüksek Ses", callback_data="VAM"),
         ],
         [
             InlineKeyboardButton(
-                text="🔽 ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔽", callback_data="Custommarkup"
+                text="🔽 Sesi Ayarla 🔽", callback_data="Custommarkup"
             )
         ],
-        [InlineKeyboardButton(text="🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Geri Dön", callback_data="settingm")],
     ]
     return f"⚙️  **{MUSIC_BOT_NAME} sᴇᴛᴛɪɴɢs**", buttons
 
@@ -245,7 +245,7 @@ def custommarkup():
             InlineKeyboardButton(text="+50", callback_data="PFZ"),
             InlineKeyboardButton(text="-50", callback_data="MFZ"),
         ],
-        [InlineKeyboardButton(text="🔼ᴄᴜsᴛᴏᴍ ᴠᴏʟᴜᴍᴇ 🔼", callback_data="AV")],
+        [InlineKeyboardButton(text="🔼Sesi Ayarla 🔼", callback_data="AV")],
     ]
     return f"⚙️  **{MUSIC_BOT_NAME} sᴇᴛᴛɪɴɢs**", buttons
 
@@ -253,15 +253,15 @@ def custommarkup():
 def usermarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="👥 ᴇᴠᴇʀʏᴏɴᴇ", callback_data="EVE"),
-            InlineKeyboardButton(text="🙍 ᴀᴅᴍɪɴs", callback_data="AMS"),
+            InlineKeyboardButton(text="👥 Herkes", callback_data="EVE"),
+            InlineKeyboardButton(text="🙍 Adminler", callback_data="AMS"),
         ],
         [
             InlineKeyboardButton(
-                text="📋 ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ʟɪsᴛs", callback_data="USERLIST"
+                text="📋 Yetki Kullanıcıların Listesi", callback_data="USERLIST"
             )
         ],
-        [InlineKeyboardButton(text="🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Geri Dön", callback_data="settingm")],
     ]
     return f"⚙️  **{MUSIC_BOT_NAME} sᴇᴛᴛɪɴɢs**", buttons
 
@@ -276,6 +276,6 @@ def dashmarkup():
             InlineKeyboardButton(text="💻 ᴄᴘᴜ", callback_data="CPT"),
             InlineKeyboardButton(text="💽 ᴅɪsᴋ", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 ɢᴏ ʙᴀᴄᴋ", callback_data="settingm")],
+        [InlineKeyboardButton(text="🔙 Geri Dön", callback_data="settingm")],
     ]
     return f"⚙️  **{MUSIC_BOT_NAME} sᴇᴛᴛɪɴɢs**", buttons
