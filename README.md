@@ -1,4 +1,4 @@
-### **Telegram Sesli Sohbetlerde Müzik Ve Video Oynatabilen Heroku Destekli Gelişmiş Bir Bot.
+### **Türkçe Komutlar Eklendi Zamanla Geliştirmeye Çalışacağım . . . !**
 
 
 ### **Deploy**
