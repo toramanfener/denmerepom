@@ -20,9 +20,9 @@ __MODULE__ = "Sudo Kullanıcılar"
 __HELP__ = """
 
 
-📌 **Üzgünüm Bu Komutları Sadece Bot Sahibi Kullanabilir Sende kendine Ait Bir Bot İstiyorsan @Yorgun_Birisi 'e Yazabilirsin...**
+📌 **Üzgünüm Bu Komutları Sadece Bot Sahibi ve Yetkililer Kullanabilir, Lütfen @kanakke ile iletişime geçiniz..**
 
-__@MajesteMusicProBot Tarafından Güçlendirildi__
+__@EğlenceBotları Tarafından Güçlendirildi__
 """
 # Add Sudo Users!
 
