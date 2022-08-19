@@ -27,17 +27,17 @@ def others_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="⬇️ ᴅᴏᴡɴʟᴏᴀᴅ ᴀᴜᴅɪᴏ/ᴠɪᴅᴇᴏ",
+                text="⬇️ İndir",
                 callback_data=f"audio_video_download {videoid}|{user_id}",
             )
         ],
         [
             InlineKeyboardButton(
-                text="⬅️ ɢᴏ ʙᴀᴄᴋ",
+                text="⬅️ Geri",
                 callback_data=f"pr_go_back_timer {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ",
+                text="🗑 Kapat",
                 callback_data=f"close",
             ),
         ],
@@ -49,19 +49,19 @@ def download_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="⬇️ ɢᴇᴛ ᴀᴜᴅɪᴏ",
+                text="⬇️ Müzik İndir",
                 callback_data=f"gets audio|{videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="⬇️ ɢᴇᴛ ᴠɪᴅᴇᴏ",
+                text="⬇️ Video İndir",
                 callback_data=f"gets video|{videoid}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⬅️ ɢᴏ ʙᴀᴄᴋ", callback_data=f"goback {videoid}|{user_id}"
+                text="⬅️ Geri", callback_data=f"goback {videoid}|{user_id}"
             ),
-            InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
+            InlineKeyboardButton(text="🗑 Kapat", callback_data=f"close"),
         ],
     ]
     return buttons

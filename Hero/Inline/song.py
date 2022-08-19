@@ -10,7 +10,7 @@ def song_markup(videoid, duration, user_id, query, query_type):
                 callback_data=f"song_right B|{query_type}|{query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="⬇️ ᴅᴏᴡɴʟᴏᴀᴅ",
+                text="⬇️ İndir",
                 callback_data=f"qwertyuiopasdfghjkl {videoid}|{user_id}",
             ),
             InlineKeyboardButton(
@@ -20,7 +20,7 @@ def song_markup(videoid, duration, user_id, query, query_type):
         ],
         [
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ sᴇᴀʀᴄʜ",
+                text="🗑 Kapat",
                 callback_data=f"forceclose {query}|{user_id}",
             )
         ],
@@ -32,17 +32,17 @@ def song_download_markup(videoid, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="⬇️ ɢᴇᴛ ᴀᴜᴅɪᴏ",
+                text="⬇️ Müzik İndir",
                 callback_data=f"gets audio|{videoid}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="⬇️ ɢᴇᴛ ᴠɪᴅᴇᴏ",
+                text="⬇️ Video İndir",
                 callback_data=f"gets video|{videoid}|{user_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ ᴍᴇɴᴜ",
+                text="🗑 Kapat",
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
         ],
