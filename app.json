@@ -105,7 +105,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "If you dont know this, Leave as it is",
-      "value": "https://github.com/toramanfener/videostreamer",
+      "value": "https://github.com/toramanfener/denmerepom",
       "required": true
     },
     "UPSTREAM_BRANCH": {
