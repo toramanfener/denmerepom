@@ -45,7 +45,7 @@
     },
     "SUPPORT_GROUP": {
       "description": "Support Group Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
-      "value": "MajesteSohbetTr",
+      "value": "KeyfiAlemTr",
       "required": false
     },
     "OWNER_ID": {
@@ -105,7 +105,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "If you dont know this, Leave as it is",
-      "value": "https://github.com/MacroKeke/KatrinaMusicBot",
+      "value": "https://github.com/toramanfener/videostreamer",
       "required": true
     },
     "UPSTREAM_BRANCH": {
