@@ -113,7 +113,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                    "➕ Beni Bir Gruba Ekle ➕",
                     url=f"https://t.me/keyfimusicbot?startgroup=true",
                 )
             ],
