@@ -87,7 +87,7 @@ async def initiate_bot():
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>ᴋᴀᴛʀɪɴᴀ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨</b>",
+            "<b>**ᴍᴀᴊᴇsᴛᴇ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ** 🌸✨</b>",
         )
     except Exception as e:
         print(
@@ -229,10 +229,11 @@ async def initiate_bot():
     console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
 
 
-home_text_pm = f"""Merhaba [Dostum](tg://settings),
-Ben Majeste Music Pro Bot Sesli Sohbetlerde Müzik ve video oynatabilirim beni gruba yönetici olarak ekleyip kesintisiz müziğin tadını çıkarabilirsiniz...!
+home_text_pm = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 𝖬𝖺𝗃𝖾𝗌𝗍𝖾 𝖬𝗎𝗌𝗂𝖼 𝖯𝗋𝗈 𝖡𝗈𝗍 !**
 
-Komutlarıma Aşağıdaki butonlardan bakabilirsiniz: / """
+**𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
+
+**𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖸𝗈𝗇𝖾𝗍𝗂𝖼𝗂 𝖮𝗅𝖺𝗋𝖺𝗄 𝖤𝗄𝗅𝖾𝗒𝗂𝗉 𝖪𝖾𝗌𝗂𝗇𝗍𝗂𝗌𝗂𝗓 𝖬𝗎𝗓𝗂𝗀𝗂𝗇 𝖳𝖺𝖽𝗂𝗇𝗂 𝖢𝗂𝗄𝖺𝗋𝖺𝖻𝗂𝗅𝗂𝗋𝖺𝗂𝗇𝗂𝗓 . . . !**"""
 
 
 @app.on_message(filters.command(["help", "start"]) & filters.private)
@@ -277,7 +278,7 @@ async def start_command(_, message):
                     except Exception:
                         continue
             if not text:
-                await message.reply_text("ɴᴏ sᴜᴅᴏ ᴜsᴇʀs")
+                await message.reply_text("Sudo Kullanıcı Yok !")
             else:
                 await message.reply_text(text)
             if await is_on_off(5):
@@ -319,10 +320,10 @@ async def start_command(_, message):
 👀**ɪᴢʟᴇᴍᴍᴇ:** `{views}`
 ⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
 🎥**ᴋᴀɴᴀʟ ɪsᴍɪ:** {channel}
-📎**ᴋᴀɴᴀʟ ʟɪɴᴋɪ:** [Visit From Here]({channellink})
+📎**kanal linki:** [Visit From Here]({channellink})
 🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋɪ:** [Link]({link})
 
-⚡️ __sᴇᴀʀᴄʜᴇᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}__"""
+⚡️ __ᴘᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -372,18 +373,18 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Selam [Dostum](tg://settings),
-Ben Majeste Music Pro Bot Sesli Sohbetlerde Müzik ve Video oynatabilirim beni gruba yönetici olarak ekleyip kesintisiz müziğin tadını çıkartabilirsiniz.
+        """**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 𝖬𝖺𝗃𝖾𝗌𝗍𝖾 𝖬𝗎𝗌𝗂𝖼 𝖯𝗋𝗈 𝖡𝗈𝗍 !**
 
-Butonlara Tıklayarak komutlarıma bakabilirsiniz: `/`
-""".format(
+**𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
+
+**𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖸𝗈𝗇𝖾𝗍𝗂𝖼𝗂 𝖮𝗅𝖺𝗋𝖺𝗄 𝖤𝗄𝗅𝖾𝗒𝗂𝗉 𝖪𝖾𝗌𝗂𝗇𝗍𝗂𝗌𝗂𝗓 𝖬𝗎𝗓𝗂𝗀𝗂𝗇 𝖳𝖺𝖽𝗂𝗇𝗂 𝖢𝗂𝗄𝖺𝗋𝖺𝖻𝗂𝗅𝗂𝗋𝖺𝗂𝗇𝗂𝗓 . . . !** """.format(
             first_name=name
         ),
         keyboard,
     )
 
 
-@app.on_callback_query(filters.regex("shikhar"))
+@app.on_callback_query(filters.regex("Yorgun_Birisi"))
 async def shikhar(_, CallbackQuery):
     text, keyboard = await help_parser(CallbackQuery.from_user.mention)
     await CallbackQuery.message.edit(text, reply_markup=keyboard)
@@ -397,12 +398,11 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""ᴍᴇʀʜᴀʙᴀ {query.from_user.first_name},
+    top_text = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 𝖬𝖺𝗃𝖾𝗌𝗍𝖾 𝖬𝗎𝗌𝗂𝖼 𝖯𝗋𝗈 𝖡𝗈𝗍 !**
 
-ʙᴇɴ ᴋᴀᴛʀɪɴᴀ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ.
+**𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
 
-ʙᴜᴛᴏɴʟᴀʀᴀ ᴛɪᴋʟᴀʏᴀʀᴀᴋ ʏᴀʀᴅɪᴍ ᴀʟᴀʙɪʟɪʀsɪɴ: /
- """
+**𝖡𝖾𝗇𝗂 𝖦𝗋𝗎𝖻𝖺 𝖸𝗈𝗇𝖾𝗍𝗂𝖼𝗂 𝖮𝗅𝖺𝗋𝖺𝗄 𝖤𝗄𝗅𝖾𝗒𝗂𝗉 𝖪𝖾𝗌𝗂𝗇𝗍𝗂𝗌𝗂𝗓 𝖬𝗎𝗓𝗂𝗀𝗂𝗇 𝖳𝖺𝖽𝗂𝗇𝗂 𝖢𝗂𝗄𝖺𝗋𝖺𝖻𝗂𝗅𝗂𝗋𝖺𝗂𝗇𝗂𝗓 . . . !**"""
     if mod_match:
         module = mod_match.group(1)
         text = (
