@@ -82,12 +82,12 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]ᴍᴀᴊᴇsᴛᴇ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨\n"
+        "[bold green]Keyf-i Alem ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>**ᴍᴀᴊᴇsᴛᴇ ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ** 🌸✨</b>",
+            "<b>**Keyf-i Alem ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ** 🌸✨</b>",
         )
     except Exception as e:
         print(
@@ -214,7 +214,7 @@ async def initiate_bot():
             await LOG_CLIENT.join_chat("yaaro_ki_yaarii")
         except:
             pass
-    console.print(f"└[red] ʜᴇʀᴏ ᴍᴜsɪᴄ ʙᴏᴛ ʙᴏᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ...")
+    console.print(f"└[red] Keyf-i ᴍᴜsɪᴄ ʙᴏᴛ ʙᴏᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ...")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
@@ -229,7 +229,7 @@ async def initiate_bot():
     console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
 
 
-home_text_pm = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 𝖬𝖺𝗃𝖾𝗌𝗍𝖾 𝖬𝗎𝗌𝗂𝖼 𝖯𝗋𝗈 𝖡𝗈𝗍 !**
+home_text_pm = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 Keyf-i Music 𝖡𝗈𝗍 !**
 
 **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
 
@@ -314,12 +314,12 @@ async def start_command(_, message):
             searched_text = f"""
 🔍__**ᴠɪᴅᴇᴏ ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ**__
 
-❇️**ᴛɪᴛʟᴇ:** {title}
+❇️**Başlık:** {title}
 
-⏳**sᴜʀᴇ:** {duration} Mins
-👀**ɪᴢʟᴇᴍᴍᴇ:** `{views}`
-⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
-🎥**ᴋᴀɴᴀʟ ɪsᴍɪ:** {channel}
+⏳**Süre:** {duration} Mins
+👀**İzlenme:** `{views}`
+⏰**Kapak Fotoğrafı:** {published}
+🎥**Kanal Ksmk:** {channel}
 📎**kanal linki:** [Visit From Here]({channellink})
 🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋɪ:** [Link]({link})
 
@@ -373,7 +373,7 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 𝖬𝖺𝗃𝖾𝗌𝗍𝖾 𝖬𝗎𝗌𝗂𝖼 𝖯𝗋𝗈 𝖡𝗈𝗍 !**
+        """**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 Keyf-i Music Bot !**
 
 **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
 
@@ -398,7 +398,7 @@ async def help_button(client, query):
     next_match = re.match(r"help_next\((.+?)\)", query.data)
     back_match = re.match(r"help_back", query.data)
     create_match = re.match(r"help_create", query.data)
-    top_text = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 𝖬𝖺𝗃𝖾𝗌𝗍𝖾 𝖬𝗎𝗌𝗂𝖼 𝖯𝗋𝗈 𝖡𝗈𝗍 !**
+    top_text = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 Keyf-i Music Bot !**
 
 **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
 
