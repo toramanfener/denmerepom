@@ -24,6 +24,9 @@ __HELP__ = """
 sᴀᴅᴇᴄᴇ sᴜᴅᴏ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀɪ ɪᴄɪɴ.
 
 
+`Reklam Ve İşbirliği İçin @kanakke ile irtibata geçiniz
+
+
 `/broadcast` [ᴍᴇsᴀᴊ ᴠᴇʏᴀ ᴍᴇsᴀᴊɪ ʏᴀɴɪᴛʟᴀᴍᴀ]
 - ʙᴏᴛ ɪʟᴇ ʏᴀʏɪɴ/ʀᴇᴋʟᴀᴍ ɪsʟᴇᴍɪ ʙᴀsʟᴀᴛɪʀ.
 
