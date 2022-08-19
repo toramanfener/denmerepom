@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from Hero import BOT_ID, SUDOERS, app
 from Hero.Utilities.formatters import bytes
 
-__MODULE__ = "sᴘᴇᴇᴅᴛᴇsᴛ"
+__MODULE__ = "Speed Test"
 __HELP__ = """
 
 `/speedtest`

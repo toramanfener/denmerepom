@@ -32,7 +32,7 @@ from Hero.Utilities.youtube import get_m3u8, get_yt_info_id
 loop = asyncio.get_event_loop()
 
 
-__MODULE__ = "sᴇsʟɪ sᴏʜʙᴇᴛ"
+__MODULE__ = "Admin Komutları"
 __HELP__ = """
 
 
@@ -51,20 +51,11 @@ __HELP__ = """
 `/queue`
 - ᴄʜᴇᴄᴋ ǫᴜᴇᴜᴇ ʟɪsᴛ.
 
-
-**ɴᴏᴛᴇ:**
-ᴏɴʟʏ ғᴏʀ sᴜᴅᴏ ᴜsᴇʀs
-
-`/activevc`
-- ᴄʜᴇᴄᴋ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ ʙᴏᴛ.
-
-`/activevideo`
-- ᴄʜᴇᴄᴋ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄᴀʟʟs ᴏɴ ʙᴏᴛ.
 """
 
 
 @app.on_message(
-    filters.command(["devam", "atla", "durdur", "son", "end", "son"])
+    filters.command(["durdur", "devam", "atla", "son", "skip", "pasue", "end"])
     & filters.group
 )
 @AdminRightsCheck

@@ -14,24 +14,24 @@ from Hero.Inline import (add_genre_markup, check_genre_markup, check_markup,
                           others_markup, play_genre_playlist, playlist_markup,
                           third_playlist_markup)
 
-__MODULE__ = "ᴘʟᴀʏʟɪsᴛ"
+__MODULE__ = "PlayList"
 __HELP__ = """
 
 
 /playplaylist 
-- Start playing Your Saved Playlist.
+- Kayıtlı Oynatma Listenizi oynatmaya başlayın.
 
 
 /playlist 
-- Check Your Saved Playlist On Servers.
+- Kayıtlı Olan Oynatma Listenizi Gösterir.
 
 
 /delmyplaylist
-- Delete any saved music in your playlist
+- Kayıtlı Olan Oynatma Listenizi Siler
 
 
 /delgroupplaylist
-- Delete any saved music in your group's playlist [Requires Admin Rights.]
+- Grubunuzun çalma listesinde kayıtlı tüm müzikleri silin [Yönetici Hakları Gerektirir.]
 """
 
 

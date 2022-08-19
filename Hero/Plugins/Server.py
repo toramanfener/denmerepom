@@ -25,32 +25,12 @@ from Hero.Utilities.paste import isPreviewUp, paste_queue
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-__MODULE__ = "sᴜɴᴜᴄᴜ"
+__MODULE__ = "Sunucu"
 __HELP__ = f"""
 
-**Note:**
-**Only for Sudo Users**
+📌 **Üzgünüm Bu Komutları Sadece Bot Sahibi Kullanabilir Sende kendine Ait Bir Bot İstiyorsan @Yorgun_Birisi 'e Yazabilirsin...**
 
-/get_log
-- Get log of last 100 lines from Heroku.
-
-/get_var
-- Get a config var from Heroku or .env.
-
-/del_var
-- Delete any var on Heroku or .env.
-
-/set_var [Var Name] [Value]
-- Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
-
-/usage
-- Get Dyno Usage.
-
-/update
-- Update Your Bot.
-
-/restart 
-- Restart Bot [All downloads, cache, raw files will be cleared too]. 
+__@MajesteMusicProBot Tarafından Güçlendirildi__
 """
 
 

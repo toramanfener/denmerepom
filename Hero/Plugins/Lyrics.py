@@ -8,14 +8,11 @@ from youtubesearchpython import VideosSearch
 
 from Hero import MUSIC_BOT_NAME, app
 
-__MODULE__ = "ʟʏʀɪᴄs"
+__MODULE__ = "Söz Arama"
 __HELP__ = """
 
 /Lyrics [sᴀʀᴋɪ ɪsᴍɪ]
 - sᴀʀᴋɪ sᴏᴢʟᴇʀɪ ᴀʀᴀʀ.
-
-**ɴᴏᴛᴇ**:
-ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴ ᴏғ ʟʏʀɪᴄs ʜᴀs sᴏᴍᴇ ʙᴜɢs. sᴇᴀʀᴄʜᴇs ᴏɴʟʏ 50% ʀᴇsᴜʟᴛs. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴄᴏᴍᴍᴀɴᴅ ɪɴsᴛᴇᴀᴅ ɪғ ʏᴏᴜ ᴡᴀɴᴛ ʟʏʀɪᴄs ғᴏʀ ᴀɴʏ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
 
 """
 

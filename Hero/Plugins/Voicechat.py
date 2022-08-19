@@ -18,7 +18,7 @@ from Hero.Utilities.assistant import get_assistant_details
 
 loop = asyncio.get_event_loop()
 
-__MODULE__ = "ɪɴᴠɪᴛᴇ"
+__MODULE__ = "Davet Etmek"
 __HELP__ = """
 
 **ɴᴏᴛ:**
@@ -33,8 +33,8 @@ sᴀᴅᴇᴄᴇ sᴜᴅᴏ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀɪ ɪᴄɪɴ
 - ᴀsɪsᴛᴀɴ ɢʀᴜʙᴜ ᴛᴇʀᴋ ᴇᴅᴇʀ.
 
 
-`/leavebot` [ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴄʜᴀᴛ ɪᴅ]
-- ʙᴏᴛ ᴡɪʟʟ ʟᴇᴀᴠᴇ ᴛʜᴇ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ.
+`/leavebot` [ɢʀᴜᴘ ᴋᴜʟʟᴀɴɪᴄɪ ᴀᴅɪ ᴠᴇʏᴀ ɪᴅ]
+- Belirlenen Sohbette Bot Grubu Terk Eder
 """
 
 @app.on_callback_query(filters.regex("gback_list_chose_stream"))

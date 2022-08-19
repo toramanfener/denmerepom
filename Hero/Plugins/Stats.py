@@ -28,13 +28,13 @@ from Hero.Inline import stats1, stats2, stats3, stats4, stats5, stats6, stats7
 from Hero.Plugins import ALL_MODULES
 from Hero.Utilities.ping import get_readable_time
 
-__MODULE__ = "sᴛᴀᴛs"
+__MODULE__ = "Stats"
 __HELP__ = """
 
 
 /stats
-- Check the Stats of Bot.
-- Gets the stat of MongoDb , Assistant, System etc
+- Bot Verilerini Getirir.
+- MongoDb verilerini Getirir.
 """
 
 

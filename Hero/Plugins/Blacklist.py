@@ -4,12 +4,12 @@ from pyrogram.types import Message
 from Hero import SUDOERS, app
 from Hero.Database import blacklist_chat, blacklisted_chats, whitelist_chat
 
-__MODULE__ = "ʙʟᴀᴄᴋʟɪsᴛ"
+__MODULE__ = "Blacklist"
 __HELP__ = """
 
 
 `/blacklistedchat`
-- ᴄʜᴇᴄᴋ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛs ᴏғ ʙᴏᴛ.
+- Kara Listeye Alınmış Grupların Listesi.
 
 
 **ɴᴏᴛᴇ:**
@@ -17,11 +17,11 @@ Sadece Botun Yöneticileri İçin.
 
 
 `/blacklistchat` [ᴄʜᴀᴛ_ɪᴅ] 
-- ʙʟᴀᴄᴋʟɪsᴛ ᴀɴʏ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ
+- Belirlenen grubu Kara Listeye Alır.
 
 
 `/whitelistchat` [ᴄʜᴀᴛ_ɪᴅ] 
-- ᴡʜɪᴛᴇʟɪsᴛ ᴀɴʏ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ ᴍᴜsɪᴄ ʙᴏᴛ
+- Kara Listeye Alınmış Grubu Beyaz Listeye Ekler
 
 """
 

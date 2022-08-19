@@ -18,7 +18,7 @@ from Hero.Utilities.tasks import add_task, rm_task
 
 # Eval and Sh module from WBB
 
-__MODULE__ = "ʙʀᴏᴀᴅᴄᴀsᴛ"
+__MODULE__ = "Reklam"
 __HELP__ = """
 **ɴᴏᴛᴇ:**
 sᴀᴅᴇᴄᴇ sᴜᴅᴏ ᴋᴜʟʟᴀɴɪᴄɪʟᴀʀɪ ɪᴄɪɴ.

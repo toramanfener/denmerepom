@@ -11,7 +11,7 @@ from Hero import SUDOERS, app, random_assistant
 from Hero.Database import get_assistant, save_assistant
 from Hero.Utilities.assistant import get_assistant_details
 
-__MODULE__ = "ᴀssɪsᴛᴀɴᴛ"
+__MODULE__ = "Asistan"
 __HELP__ = f"""
 
 
@@ -19,14 +19,6 @@ __HELP__ = f"""
 - ᴀsɪsᴛᴀɴ sɪʜʙᴇᴛɪɴɪᴢᴅᴇ ᴠᴀʀᴍɪ ᴋᴏɴᴛʀᴏʟ ᴇᴅᴇʀ
 
 
-**ɴᴏᴛᴇ:**
--ᴏɴʟʏy ғᴏʀ sᴜᴅᴏ ᴜsᴇʀs
-
-`/changeassistant` [ᴀss ɴᴜᴍʙᴇʀ]
-- ᴄʜᴀɴɢᴇ ᴛʜᴇ ᴘʀᴇᴠɪᴏɪᴜs ᴀʟʟᴏᴛᴇᴅ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ɴᴇᴡ ᴏɴᴇ.
-
-`/setassistant` [ᴀss ɴᴜᴍʙᴇʀ ᴏʀ ʀᴀɴᴅᴏᴍ]
-- sᴇᴛ ᴀ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ғᴏʀ ᴄʜᴀᴛ. 
 """
 
 

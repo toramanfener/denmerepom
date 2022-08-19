@@ -16,32 +16,13 @@ from Hero.Database import (add_gban_user, add_off, add_on, add_sudo,
                             remove_gban_user, remove_served_chat, remove_sudo,
                             set_video_limit)
 
-__MODULE__ = "sᴜᴅᴏ ᴜsᴇʀs"
+__MODULE__ = "Sudo Kullanıcılar"
 __HELP__ = """
 
 
-/sudolist 
-    Check the sudo user list of Bot. 
+📌 **Üzgünüm Bu Komutları Sadece Bot Sahibi Kullanabilir Sende kendine Ait Bir Bot İstiyorsan @Yorgun_Birisi 'e Yazabilirsin...**
 
-
-**Note:**
-Only for Sudo Users. 
-
-
-/addsudo [Username or Reply to a user]
-- To Add A User In Bot's Sudo Users.
-
-/delsudo [Username or Reply to a user]
-- To Remove A User from Bot's Sudo Users.
-
-/maintenance [enable / disable]
-- When enabled Bot goes under maintenance mode. No one can play Music now!
-
-/logger [enable / disable]
-- When enabled Bot logs the searched queries in logger group.
-
-/clean
-- Clean Temp Files and Logs.
+__@MajesteMusicProBot Tarafından Güçlendirildi__
 """
 # Add Sudo Users!
 

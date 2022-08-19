@@ -18,17 +18,17 @@ from Hero.Utilities.download import get_formats, get_type
 user_time = {}
 flex = {}
 
-__MODULE__ = "ɢ-ʙᴀɴ"
+__MODULE__ = "G-ban"
 __HELP__ = """
 
 **ɴᴏᴛᴇ:**
 ᴏɴʟʏ ғᴏʀ sᴜᴅᴏ ᴜsᴇʀs.
 
-`/gban` [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ]
-- ʙᴀɴ ᴀ ᴜsᴇʀ ɢʟᴏʙᴀʟʟʏ ɪɴ ʙᴏᴛ's sᴇʀᴠᴇᴅ ᴄʜᴀᴛs ᴀɴᴅ ᴘʀᴇᴠᴇɴᴛs ᴜsᴇʀ ғʀᴏᴍ ᴜsɪɴɢ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs.
+`/gban` [Kullanıcı Adı Veya Mesaj Yanıtlama]
+- Belirlenen Kullanıcıyı Botun Yönetici Olduğu Gruplardan Yasaklar Ve Botu Kullanamaz Hale Gelir.
 
-`/ungban` [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴜsᴇʀ]
-- ʀᴇᴍᴏᴠᴇ ᴀ ᴜsᴇʀ ғʀᴏᴍ ʙᴏᴛ's ɢʙᴀɴ ʟɪsᴛ.
+`/ungban` [Kullanıcı Adı Veya Mesaj Yanıtlama]
+- Yasaklanmış Kullanıcının Yasağını Kaldırır.
 """
 
 
@@ -121,13 +121,13 @@ async def boom(_, CallbackQuery):
         thumb_image_path = result["thumbnails"][0]["url"]
         channel = channel = result["channel"]["name"]
         fetched = f"""
-🔍**ᴛʀᴀᴄᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ**
+🔍**Parça İndirildi**
 
-🌸**ᴛɪᴛʟᴇ:** {title}
+🌸**Başlık:** {title}
 
-⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
-🧿**ᴠɪᴇᴡs:** `{views}`
-🎥**ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
+⏳**Süre:** {duration} Mins
+🧿**İzlenme:** `{views}`
+🎥**Kanal İsmi:** {channel}
 🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋ:** [Link]({yturl})
 
 ⚡️ __ʏᴏᴜᴛᴜʙᴇ ɪɴʟɪɴᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {MUSIC_BOT_NAME}__"""

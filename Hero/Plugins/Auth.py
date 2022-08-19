@@ -9,7 +9,7 @@ from Hero.Decorators.admins import AdminActual
 from Hero.Utilities.changers import (alpha_to_int, int_to_alpha,
                                       time_to_seconds)
 
-__MODULE__ = "ᴀᴜᴛʜ ᴜsᴇʀs"
+__MODULE__ = "Yönetici Kullanıcılar"
 __HELP__ = """
 
 **ɴᴏᴛᴇ:**
@@ -133,7 +133,7 @@ async def authusers(_, message: Message):
     _playlist = await get_authuser_names(message.chat.id)
     if not _playlist:
         return await message.reply_text(
-            f"ɴᴏ ᴀᴜᴛʜᴏʀɪsᴇᴅ ᴜsᴇʀs ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ...\n\nᴀᴅᴅ ᴀᴜᴛʜ ᴜsᴇʀs ʙʏ /auth ᴀɴᴅ ʀᴇᴍᴏᴠᴇ ʙʏ /unauth."
+            f"**Grubunuzda Yetkili Kullanıcı Bulunmadı.** \n\nEklemek İçin /ver almak için /al Kullanın."
         )
     else:
         j = 0

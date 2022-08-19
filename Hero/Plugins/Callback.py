@@ -167,7 +167,7 @@ async def admin_risghts(_, CallbackQuery):
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__</b> {title} \n⏳<b>__Duration:__</b> {duration_min} \n👤<b>__Requested by:__ </b> {mention}",
+                    caption=f"<b>__Sesli Sohbet Atlatıldı__</b>\n\n🎥<b>__Oynatılan:__</b> {title} \n⏳<b>__Süre:__</b> {duration_min} \n👤<b>__Oynatan:__ </b> {mention}",
                 )
                 await start_timer(
                     videoid,
@@ -182,7 +182,7 @@ async def admin_risghts(_, CallbackQuery):
                 afk = videoid
                 await CallbackQuery.answer()
                 mystic = await CallbackQuery.message.reply_text(
-                    "Skipped! Please Wait Changing Video Stream...."
+                    "Atlandı! Lütfen Video Akışını Değiştirmeyi Bekleyin...."
                 )
                 read = (str(videoid)).replace("s1s_", "", 1)
                 s = read.split("_+_")
@@ -204,7 +204,7 @@ async def admin_risghts(_, CallbackQuery):
                         photo="Utils/Telegram.JPEG",
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"<b>__Skipped Video Chat__</b>\n\n👤**__Requested by:__** {mention}"
+                            f"<b>__Atlatıldı__</b>\n\n👤**__Parçayı Ekleyen:__** {mention}"
                         ),
                     )
                     await mystic.delete()
@@ -244,7 +244,7 @@ async def admin_risghts(_, CallbackQuery):
                         photo=thumb,
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"<b>__Skipped Video Chat__</b>\n\n🎥<b>__Started Video Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n👤**__Requested by:__** {mention}"
+                            f"<b>__Atlatıldı__</b>\n\n🎥<b>__Video Oynatılıyor:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n👤**__Requested by:__** {mention}"
                         ),
                     )
                     os.remove(thumb)
@@ -272,7 +272,7 @@ async def admin_risghts(_, CallbackQuery):
                     thumbnail,
                 ) = get_yt_info_id(videoid)
                 await mystic.edit(
-                    f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+                    f"**{MUSIC_BOT_NAME} Indirildi**\n\n**Süre:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
                 )
                 downloaded_file = await loop.run_in_executor(
                     None, download, videoid, mystic, title
@@ -302,7 +302,7 @@ async def admin_risghts(_, CallbackQuery):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} Mins\n👤**__Requested by:__** {mention}"
+                        f"<b>__Atlatıldı__</b>\n\n🎥<b>__Şu an Oynatılan:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} Mins\n👤**__Ekleyen:__** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -446,7 +446,7 @@ async def play_playlist(_, CallbackQuery):
                 got_queue.append(to_append)
                 await music_on(chat_id)
                 await add_active_chat(chat_id)
-                cap = f"🎥<b>__Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {CallbackQuery.from_user.mention}"
+                cap = f"🎥<b>__Oynatılıyor:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Ekleyen:__** {CallbackQuery.from_user.mention}"
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
