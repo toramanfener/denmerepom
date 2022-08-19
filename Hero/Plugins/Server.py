@@ -28,9 +28,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 __MODULE__ = "Sunucu"
 __HELP__ = f"""
 
-📌 **Üzgünüm Bu Komutları Sadece Bot Sahibi Kullanabilir Sende kendine Ait Bir Bot İstiyorsan @Yorgun_Birisi 'e Yazabilirsin...**
+📌 **Üzgünüm Bu Komutları Sadece Bot Sahibi Ve Yetkililer Tarafından Kullanılabilir @kanakke...**
 
-__@MajesteMusicProBot Tarafından Güçlendirildi__
+__@EglenceBotlari Tarafından Güçlendirildi__
 """
 
 
