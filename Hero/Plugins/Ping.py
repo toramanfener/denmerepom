@@ -12,7 +12,7 @@ from Hero.Utilities.ping import get_readable_time
 __MODULE__ = "Ping"
 __HELP__ = """
 
-`/ping` - ᴄʜᴇᴄᴋ ɪғ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ.
+`/ping` - Sistem Ping Durumunu Ölçer
 """
 
 
@@ -40,5 +40,5 @@ async def ping(_, message):
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit_text(
-        f"**💐 ᴘᴏɴɢ**\n`⚡{resp} ᴍs`\n\n**{MUSIC_BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:**{uptime}"
+        f"**💐 PİNG**\n`⚡{resp} ᴍs`\n\n**{MUSIC_BOT_NAME} Sistem Durumu:**{uptime}"
     )
