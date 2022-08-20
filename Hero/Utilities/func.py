@@ -83,9 +83,9 @@ async def mplay_stream(message,MusicData):
         return await message.reply_text(
             f"**ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴍɪᴛ ᴇxᴄᴇᴇᴅᴇᴅ**\n\n**ᴀʟʟᴏᴡᴇᴅ ᴅᴜʀᴀᴛɪᴏɴ: **{DURATION_LIMIT_MIN} ᴍɪɴᴜᴛᴇs\n**ʀᴇᴄᴇɪᴠᴇᴅ ᴅᴜʀᴀᴛɪᴏɴ:** {duration_min} ᴍɪɴᴜᴛᴇs"
         )
-    mystic = await message.reply_text(f"🔄 ᴘʀᴏᴄᴇssɪɴɢ:- {title[:20]}")
+    mystic = await message.reply_text(f"🔄 İşleniyor:- {title[:20]}")
     await mystic.edit(
-        f"**{MUSIC_BOT_NAME} ᴅᴏᴡɴʟᴏᴀᴅᴇʀ**\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**{MUSIC_BOT_NAME} İndiren**\n**Başlık:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
     downloaded_file = await loop.run_in_executor(
         None, download, videoid, mystic, title
@@ -150,7 +150,7 @@ async def custom_start_stream(
         final_output = await message.reply_photo(
             photo=thumb,
             caption=(
-                f"🎬<b>__sᴏɴɢ:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} \n💡<b>__ɪɴғᴏ:__</b> [ɢᴇᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ɪɴғᴏʀᴍᴀᴛɪᴏɴ](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__ </b>{message.from_user.mention} \n🚧<b>__ǫᴜᴇᴜᴇᴅ ᴀᴛ:__</b> <b>#{position}</b>"
+                f"🎬<b>__Şarkılar:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__ᴅᴜʀᴀᴛɪᴏɴ:__</b> {duration_min} \n💡<b>__ɪɴғᴏ:__</b> [ɢᴇᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ɪɴғᴏʀᴍᴀᴛɪᴏN](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Talep Eden:__ </b>{message.from_user.mention} \n🚧<b>__ǫᴜᴇᴜᴇᴅ ᴀᴛ:__</b> <b>#{position}</b>"
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -173,7 +173,7 @@ async def custom_start_stream(
             videoid, message.from_user.id, duration_min, duration_min
         )
         await mystic.delete()
-        cap = f"🎥<b>__ᴘʟᴀʏɪɴɢ:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__ɪɴғᴏ:__</b> [ɢᴇᴛ ᴀᴅᴅɪᴛɪᴏɴᴀʟ ɪɴғᴏʀᴍᴀᴛɪᴏɴ](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:__** {message.from_user.mention}"
+        cap = f"🎥<b>__Oynatılıyor:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Bilgi:__</b> [Bilgi Menüsü](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Talep Eden:__** {message.from_user.mention}"
         final_output = await message.reply_photo(
             photo=thumb,
             reply_markup=InlineKeyboardMarkup(buttons),
