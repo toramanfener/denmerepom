@@ -89,7 +89,7 @@ async def timer_checkup_markup(_, CallbackQuery):
         )
 
 
-@app.on_message(filters.command("queue"))
+@app.on_message(filters.command("listt"))
 async def activevc(_, message: Message):
     global get_queue
     if await is_active_chat(message.chat.id):
@@ -107,22 +107,22 @@ async def activevc(_, message: Message):
         current_playing = fetched[0][0]
         user_name = fetched[0][1]
 
-        msg = "**ǫᴜᴇᴜᴇᴅ ʟɪsᴛ**\n\n"
-        msg += "**ᴄᴜʀʀᴇɴᴛʟʏ ᴘʟᴀʏɪɴɢ:**"
+        msg = "**Çalma Listesi**\n\n"
+        msg += "**Şuan Oynatılsn:**"
         msg += "\n▶️" + current_playing[:30]
         msg += f"\n   ╚ʙʏ:- {user_name}"
-        msg += f"\n   ╚ᴅᴜʀᴀᴛɪᴏɴ:- ʀᴇᴍᴀɪɴɪɴɢ `{dur_left}` ᴏᴜᴛ ᴏғ `{duration_min}` ᴍɪɴs."
+        msg += f"\n   ╚Süre:- ʀᴇᴍᴀɪɴɪɴɢ `{dur_left}` ᴏᴜᴛ ᴏғ `{duration_min}` ᴍɪɴs."
         fetched.pop(0)
         if fetched:
             msg += "\n\n"
-            msg += "**ᴜᴘ ɴᴇxᴛ ɪɴ ǫᴜᴇᴜᴇ:**"
+            msg += "**Sıraya Eklendi:**"
             for song in fetched:
                 name = song[0][:30]
                 usr = song[1]
                 dur = song[2]
                 msg += f"\n⏸️{name}"
-                msg += f"\n   ╠ᴅᴜʀᴀᴛɪᴏɴ : {dur}"
-                msg += f"\n   ╚ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {usr}\n"
+                msg += f"\n   ╠Süre : {dur}"
+                msg += f"\n   ╚Talep Eden : {usr}\n"
         if len(msg) > 4096:
             await mystic.delete()
             filename = "queue.txt"
