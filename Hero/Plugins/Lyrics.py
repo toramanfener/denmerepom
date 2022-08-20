@@ -11,13 +11,13 @@ from Hero import MUSIC_BOT_NAME, app
 __MODULE__ = "Söz Arama"
 __HELP__ = """
 
-/Lyrics [sᴀʀᴋɪ ɪsᴍɪ]
+/söz [sᴀʀᴋɪ ɪsᴍɪ]
 - sᴀʀᴋɪ sᴏᴢʟᴇʀɪ ᴀʀᴀʀ.
 
 """
 
 
-@app.on_callback_query(filters.regex(pattern=r"lyrics"))
+@app.on_callback_query(filters.regex(pattern=r"Lyrics"))
 async def lyricssex(_, CallbackQuery):
     callback_data = CallbackQuery.data.strip()
     callback_request = callback_data.split(None, 1)[1]
@@ -50,7 +50,7 @@ async def lyricssex(_, CallbackQuery):
     userid = CallbackQuery.from_user.id
     usr = f"[{CallbackQuery.from_user.first_name}](tg://user?id={userid})"
     xxx = f"""
-**ʟʏʀɪᴄs sᴇᴀʀᴄʜ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {MUSIC_BOT_NAME}**
+**Söz Arama {MUSIC_BOT_NAME} Tarafından Gerçekleştirildi**
 
 **sᴇᴀʀᴄʜᴇᴅ ʙʏ:-** {usr}
 **sᴇᴀʀᴄʜᴇᴅ sᴏɴɢ:-** __{title}__
@@ -75,7 +75,7 @@ async def lyricssex(_, CallbackQuery):
         await CallbackQuery.message.reply_text(xxx)
 
 
-@app.on_message(filters.command("lyrics"))
+@app.on_message(filters.command("söz"))
 async def lrsearch(_, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("**ᴜsᴀɢᴇ:**\n\n/lyrics [ ᴍᴜsɪᴄ ɴᴀᴍᴇ]")
