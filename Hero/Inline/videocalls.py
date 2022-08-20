@@ -28,11 +28,11 @@ def livestream_markup(quality, videoid, duration, user_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🎥  sᴛᴀʀᴛ ʟɪᴠᴇ",
+                text="🎥  Yayını Başlat",
                 callback_data=f"LiveStream {quality}|{videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ",
+                text="🗑 Kapat",
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
@@ -58,11 +58,11 @@ def stream_quality_markup(videoid, duration, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="⬅️ ɢᴏ ʙᴀᴄᴋ",
+                text="⬅️ Geri Dön",
                 callback_data=f"gback_list_chose_stream {videoid}|{duration}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ sᴇᴀʀᴄʜ",
+                text="🗑 Kapat",
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
         ],
