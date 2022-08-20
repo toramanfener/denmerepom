@@ -26,11 +26,11 @@ def url_markup(videoid, duration, user_id, query, query_type):
         ],
         [
             InlineKeyboardButton(
-                text="🔎 ᴍᴏʀᴇ ʀᴇsᴜʟᴛs",
+                text="🔎 Daha Fazla",
                 callback_data=f"Search {query}|{user_id}",
             ),
             InlineKeyboardButton(
-                text="🗑 ᴄʟᴏsᴇ sᴇᴀʀᴄʜ",
+                text="🗑 Kapat",
                 callback_data=f"forceclose {query}|{user_id}",
             ),
         ],
@@ -173,7 +173,7 @@ def secondary_markup(videoid, user_id):
         ],
         [
             InlineKeyboardButton(
-                text="🔗 ᴍᴏʀᴇ ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"
+                text="🔗 Menü", callback_data=f"other {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="🗑 Kapat", callback_data=f"close"),
         ],
@@ -215,7 +215,7 @@ def primary_markup(videoid, user_id, current_time, total_time):
         ],
         [
             InlineKeyboardButton(
-                text="🔗 ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"
+                text="🔗 Menü", callback_data=f"other {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="🗑 Kapat", callback_data=f"close"),
         ],
@@ -239,7 +239,7 @@ def timer_markup(videoid, user_id, current_time, total_time):
         ],
         [
             InlineKeyboardButton(
-                text="🔗 ᴍᴇɴᴜ", callback_data=f"other {videoid}|{user_id}"
+                text="🔗 Menü", callback_data=f"other {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="🗑 Kapat", callback_data=f"close"),
         ],
