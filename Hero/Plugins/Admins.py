@@ -48,14 +48,14 @@ __HELP__ = """
 `/son` ᴠᴇʏᴀ `/end`
 - ᴍᴜᴢɪᴋ ᴄᴀʟᴍᴀʏɪ sᴏɴᴀ ᴇʀɪʀ.
 
-`/queue`
-- ᴄʜᴇᴄᴋ ǫᴜᴇᴜᴇ ʟɪsᴛ.
+`/listt`
+- Kuyrukta ki Şarkıları Gösterir
 
 """
 
 
 @app.on_message(
-    filters.command(["durdur", "devam", "atla", "son", "skip", "pasue", "end"])
+    filters.command(["dur", "devam", "atla", "son", "gec", "dur", "son"])
     & filters.group
 )
 @AdminRightsCheck
