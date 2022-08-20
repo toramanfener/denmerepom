@@ -25,7 +25,7 @@ async def lyricssex(_, CallbackQuery):
         id, user_id = callback_request.split("|")
     except Exception as e:
         return await CallbackQuery.message.edit(
-            f"ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ\n**ᴘᴏssɪʙʟᴇ ʀᴇᴀsᴏɴ ᴄᴏᴜʟᴅ ʙᴇ**:{e}"
+            f"Hata Oluştu\n**Olası Sebepler**:{e}"
         )
     url = f"https://www.youtube.com/watch?v={id}"
     print(url)
@@ -35,7 +35,7 @@ async def lyricssex(_, CallbackQuery):
             title = result["title"]
     except Exception as e:
         return await CallbackQuery.answer(
-            "sᴏᴜɴᴅ ɴᴏᴛ ғᴏᴜɴᴅ ʏᴏᴜᴛᴜʙᴇ ɪssᴜᴇs...", show_alert=True
+            "Parça YouTube de Bulunmadı...", show_alert=True
         )
     x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
     y = lyricsgenius.Genius(x)
@@ -44,7 +44,7 @@ async def lyricssex(_, CallbackQuery):
     S = y.search_song(t, get_full_info=False)
     if S is None:
         return await CallbackQuery.answer(
-            "ʟʏʀɪᴄs ɴᴏᴛ ғᴏᴜɴᴅ...", show_alert=True
+            "Sözler Bulunamadı...", show_alert=True
         )
     await CallbackQuery.message.delete()
     userid = CallbackQuery.from_user.id
@@ -88,7 +88,7 @@ async def lrsearch(_, message: Message):
     if S is None:
         return await m.edit("ʟʏʀɪᴄs ɴᴏᴛ ғᴏᴜɴᴅ...")
     xxx = f"""
-**ʟʏʀɪᴄs sᴇᴀʀᴄʜ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {MUSIC_BOT_NAME}**
+**Söz Arama {MUSIC_BOT_NAME} Tarafından Gerçekleştirildi**
 
 **sᴇᴀʀᴄʜᴇᴅ sᴏɴɢ:-** __{query}__
 **ғᴏᴜɴᴅ ʟʏʀɪᴄs ғᴏʀ:-** __{S.title}__
