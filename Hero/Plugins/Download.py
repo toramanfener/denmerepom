@@ -130,7 +130,7 @@ async def boom(_, CallbackQuery):
 🎥**Kanal İsmi:** {channel}
 🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋ:** [Link]({yturl})
 
-⚡️ __ʏᴏᴜᴛᴜʙᴇ ɪɴʟɪɴᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴏᴡᴇʀᴇᴅ ʙʏ {MUSIC_BOT_NAME}__"""
+⚡️ __{MUSIC_BOT_NAME} Tarafından İndirildi__"""
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), "downloads", str(user_id))
     if not os.path.isdir(userdir):
