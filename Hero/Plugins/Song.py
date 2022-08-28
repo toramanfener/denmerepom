@@ -66,7 +66,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             await message.reply_text(
-                "**Usage:**\n\n/bul [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
+                "**Kullanım:**\n\n/bul [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
             )
             return
         mystic = await message.reply_text("🔍")
@@ -206,7 +206,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             await message.reply_text(
-                "**Usage:**\n\n/song [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
+                "**Kullanım:**\n\n/song [müzik adı veya yt link]\n\nSizin için müzik dosyası indirir."
             )
             return
         mystic = await message.reply_text("⏳")
