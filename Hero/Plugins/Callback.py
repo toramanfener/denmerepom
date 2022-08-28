@@ -59,13 +59,13 @@ async def admin_risghts(_, CallbackQuery):
     command = CallbackQuery.matches[0].group(1)
     if not await is_active_chat(CallbackQuery.message.chat.id):
         return await CallbackQuery.answer(
-            "Nothing is playing on voice chat.", show_alert=True
+            "Sesli Sohbet Bulunamadı.", show_alert=True
         )
     chat_id = CallbackQuery.message.chat.id
     if command == "pausecb":
         if not await is_music_playing(chat_id):
             return await CallbackQuery.answer(
-                "Music is already Paused", show_alert=True
+                "Muzik Durduruldu", show_alert=True
             )
         await music_off(chat_id)
         await pause_stream(chat_id)
@@ -78,7 +78,7 @@ async def admin_risghts(_, CallbackQuery):
     if command == "resumecb":
         if await is_music_playing(chat_id):
             return await CallbackQuery.answer(
-                "Music is already Resumed.", show_alert=True
+                "Müzik Yayını Devam Ediyor.", show_alert=True
             )
         await music_on(chat_id)
         await resume_stream(chat_id)
