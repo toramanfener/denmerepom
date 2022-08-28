@@ -118,7 +118,7 @@ async def mplayaa(_, message: Message):
             videoid,
         ) = get_yt_info_query(query)
         await mystic.delete()        
-        MusicData = f"MusicStream {videoid}|{duration_min}|{message.from_user.id}"
+        MusicData = f"Müzik Yayını {videoid}|{duration_min}|{message.from_user.id}"
         return await mplay_stream(message,MusicData)
     else:
         if len(message.command) < 2:
@@ -128,7 +128,7 @@ async def mplayaa(_, message: Message):
             await message.reply_photo(
                 photo="Utils/Playlist.jpg",
                 caption=(
-                    "**ᴜsᴀɢᴇ:** `/oynat` [Müzik adı veya yt link veya ses dosyasına yanıt verme]\n\nSesli Sohbette video veya müzik oynatır..."
+                    "**Kullanım:** `/oynat` [Müzik adı veya yt link veya ses dosyasına yanıt verme]\n\nSesli Sohbette video veya müzik oynatır..."
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
