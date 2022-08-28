@@ -82,12 +82,12 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Keyf-i Alem ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨\n"
+        "[bold green]Asena ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ 🌸✨\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>**Keyf-i Alem ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ** 🌸✨</b>",
+            "<b>**Asena ᴍᴜᴢɪᴋ ʙᴏᴛᴜ ʙᴀşʟᴀᴛɪʟᴅɪ** 🌸✨</b>",
         )
     except Exception as e:
         print(
@@ -229,7 +229,7 @@ async def initiate_bot():
     console.print(f"\n[red]sᴛᴏᴘᴘɪɴɢ ʙᴏᴛ")
 
 
-home_text_pm = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾𝗇 Keyf-i Music 𝖡𝗈𝗍 !**
+home_text_pm = f"""**𝖬𝖾𝗋𝗁𝖺𝖻𝖺 𝖡𝖾n Asena Music 𝖡𝗈𝗍 !**
 
 **𝖲𝖾𝗌𝗅𝗂 𝖲𝗈𝗁𝖻𝖾𝗍𝗍𝖾 𝖬𝗎𝗓𝗂𝗄 𝖵𝖾 𝖵𝗂𝖽𝖾𝗈 𝖮𝗒𝗇𝖺𝗍𝖺𝖻𝗂𝗅𝗂𝗋𝗂𝗆...!**
 
